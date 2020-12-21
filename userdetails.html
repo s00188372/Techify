@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Buy a mobile phone online">
+  <meta name="keywords" content="Phone, buy, online, apple, samsung">
+  <meta name="author" content="Techify">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <title>Techify - User Details</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="icon" href="photos/logo.png" type="image/gif" sizes="16x16">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">    
+</head>
+<body>
+<main class="container">
+
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark rounded">
+        <a class="navbar-brand" href="#">
+            <img src="photos/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Techify
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="aboutus.html">About</a>
+            <a class="nav-item nav-link" href="shop.html">Shop</a>
+            <a class="nav-item nav-link" href="help.html">Contact</a>
+      
+          </div>
+         </div>
+          
+          <div class="btn-group">
+              <button type="button" class="btn btn-primary"  id="loginlogout" href="#">Login</button>
+              <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu" id="accountdetails" aria-labelledby="dropdownMenuReference">
+                <a class="dropdown-item" href="userdetails.html">User Details</a>
+              </div>
+          </div>
+            
+          <div class="btn-toolbar">
+              <a class="nav-item nav-link" href="checkout.html">
+              <button type="button" class="btn btn-secondary ml-2">
+                Checkout <span class="badge badge-light" id="checkout"></span>
+              </button>
+              </a>
+          </div>   
+      </nav>      
+   
+      <div class="jumbotron">
+        <h1 class="display-4"><i class='fas fa-address-card' style='font-size:48px'></i> User Details</h1>
+        <hr class="my-4">
+        <div class="row">    
+            <div class="col-sm col-md-4"> 
+                <form name="userdetails" id="udetails" action="" method="get">
+                    <fieldset>
+                        <legend>Delivery Details</legend>
+                        <div class="form-group">
+                            <label for="getFirstName">First name</label>
+                            <input type="text" class="form-control" id="getFirstName" name="firstname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="getLastName">Last name</label> 
+                            <input type="text" class="form-control" id="getLastName" name="lastname" required>
+                        </div>    
+                        <div class="form-group">
+                            <label for="getDOB">Date of Birth</label> 
+                            <input type="date" class="form-control" id="getDOB" name="dob" required>
+                        </div>  
+                    </fieldset>    
+                    
+                    <fieldset>
+                        <legend>Delivery Details</legend>
+                        <div class="form-group">
+                            <label for="getAddress1">Address 1</label> 
+                            <input type="text" class="form-control" id="getAddress1" name="address1" required>
+                        </div>   
+                        <div class="form-group">
+                            <label for="getAddress2">Address 2</label> 
+                            <input type="text" class="form-control" id="getAddress2" name="address2" required>
+                        </div>  
+                        <div class="form-group">
+                            <label for="getAddress3">Address 3</label> 
+                            <input type="text" class="form-control" id="getAddress3" name="address3" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="getCity">City</label> 
+                            <input type="text" class="form-control" id="getCity" name="City" required>
+                        </div> 
+                        <div class="form-group">
+                          <label for="getCounty">County </label> 
+                          <input type="text" class="form-control" id="getCounty" name="County" required>
+                      </div> 
+                    </fieldset>    
+                    <input type='submit' class="btn btn-primary" value="Update My Details">
+                </form>
+    
+    
+            </div> 
+        </div>   
+      </div>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4 pb-0">
+          <form action="">
+            <div class="row">
+              <div class="col-auto mb-4 mb-md-0">
+                <p class="pt-2"><strong>Sign up for our newsletter</strong></p>
+              </div>
+              <div class="col-md-5 col-12 mb-4 mb-md-0">
+                <div class="form-outline mb-4">
+                  <input type="email" id="form5Example2" class="form-control" />
+                  <label class="form-label" for="form5Example2">Email address</label>
+                </div>
+              </div>
+              <div class="col-auto mb-4 mb-md-0">
+                <button type="submit" class="btn btn-primary mb-4">Subscribe</button>
+              </div>
+            </div>
+            
+          </form>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+          © 2020 Copyright Techify
+        </div>
+      </footer> 
+
+    
+</main>
+    <script src="js/jquery-min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script> 
+    <script src="custom-js/minify-js.js"></script>   
+    
+</body>
+</html>
+
+
+

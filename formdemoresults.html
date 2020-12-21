@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Form values returned</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">    
+</head>
+<body>
+    <main class="container">
+        <h1>Show results of form in different page </h1>
+    </main>
+<script src="js/jquery-min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>    
+<script>
+// javascript code will only run once the DOM is ready   
+$(document).ready(function(){
+
+    var formValues = JSON.parse(localStorage.getItem('regForm'));
+    for(var i=0;i<formValues.length;i++){
+           // display the name/value pairs on screen    
+           alert('Field name is : ' + formValues[i]['name'] + ', Value is: ' + formValues[i]['value']);
+        }
+});
+</script>     
+</body>
+</html>
